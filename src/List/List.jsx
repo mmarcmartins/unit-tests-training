@@ -9,8 +9,8 @@ const List = (props) => {
   const getUsers = async () => {
     const users = await axios.get('https://jsonplaceholder.typicode.com/users');         
     setAppUsers(users.data);
-    
   }
+  
   useEffect(() => {
      getUsers();
   },[])
